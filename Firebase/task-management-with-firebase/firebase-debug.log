@@ -1,0 +1,117 @@
+[debug] [2024-04-24T17:45:03.204Z] ----------------------------------------------------------------------
+[debug] [2024-04-24T17:45:03.207Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-24T17:45:03.207Z] CLI Version:   13.7.4
+[debug] [2024-04-24T17:45:03.208Z] Platform:      win32
+[debug] [2024-04-24T17:45:03.208Z] Node Version:  v20.11.1
+[debug] [2024-04-24T17:45:03.208Z] Time:          Wed Apr 24 2024 20:45:03 GMT+0300 (East Africa Time)
+[debug] [2024-04-24T17:45:03.208Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-24T17:45:03.215Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-24T17:45:03.215Z] > authorizing via signed-in user (davidwmaina89@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\xampp\htdocs\PLP_Web_Dev\Firebase\task-management-with-firebase
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-04-24T17:45:31.783Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-04-24T17:45:32.869Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-04-24T17:45:32.869Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project task-management-app-eb65b (Task Management App) 
+[info] 
+=== Firestore Setup
+[debug] [2024-04-24T17:45:37.204Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/firestore.googleapis.com [none]
+[debug] [2024-04-24T17:45:37.204Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/firestore.googleapis.com x-goog-quota-user=projects/task-management-app-eb65b
+[debug] [2024-04-24T17:45:39.587Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/firestore.googleapis.com 200
+[debug] [2024-04-24T17:45:39.588Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/firestore.googleapis.com [omitted]
+[debug] [2024-04-24T17:45:39.588Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/task-management-app-eb65b/databases/(default) [none]
+[debug] [2024-04-24T17:45:41.589Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/task-management-app-eb65b/databases/(default) 200
+[debug] [2024-04-24T17:45:41.589Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/task-management-app-eb65b/databases/(default) {"name":"projects/task-management-app-eb65b/databases/(default)","uid":"2209466f-7d37-41d9-8312-ab9255bd34d1","createTime":"2024-04-24T16:51:06.472673Z","updateTime":"2024-04-24T16:51:06.472673Z","locationId":"eur3","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-04-24T16:51:06.472673Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"e","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IPnDoOqz24UDMOGRq9Cn24UD"}
+[debug] [2024-04-24T17:45:41.589Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-04-24T17:45:41.590Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-24T17:45:41.590Z] > authorizing via signed-in user (davidwmaina89@gmail.com)
+[debug] [2024-04-24T17:45:41.590Z] [iam] checking project task-management-app-eb65b for permissions ["firebase.projects.get"]
+[debug] [2024-04-24T17:45:41.591Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-management-app-eb65b:testIamPermissions [none]
+[debug] [2024-04-24T17:45:41.591Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-management-app-eb65b:testIamPermissions x-goog-quota-user=projects/task-management-app-eb65b
+[debug] [2024-04-24T17:45:41.591Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-management-app-eb65b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-24T17:45:43.714Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-management-app-eb65b:testIamPermissions 200
+[debug] [2024-04-24T17:45:43.715Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-management-app-eb65b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-04-24T17:46:38.726Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/task-management-app-eb65b/releases pageSize=10&pageToken=
+[debug] [2024-04-24T17:46:40.329Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/task-management-app-eb65b/releases 200
+[debug] [2024-04-24T17:46:40.330Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/task-management-app-eb65b/releases {"releases":[{"name":"projects/task-management-app-eb65b/releases/cloud.firestore","rulesetName":"projects/task-management-app-eb65b/rulesets/6a9fcd73-a9f5-4c26-9585-7cbb1527d5e8","createTime":"2024-04-24T16:51:17.569457Z","updateTime":"2024-04-24T16:51:17.569457Z"}]}
+[debug] [2024-04-24T17:46:40.330Z] Found ruleset: projects/task-management-app-eb65b/rulesets/6a9fcd73-a9f5-4c26-9585-7cbb1527d5e8
+[debug] [2024-04-24T17:46:40.332Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/task-management-app-eb65b/rulesets/6a9fcd73-a9f5-4c26-9585-7cbb1527d5e8 [none]
+[debug] [2024-04-24T17:46:41.216Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/task-management-app-eb65b/rulesets/6a9fcd73-a9f5-4c26-9585-7cbb1527d5e8 200
+[debug] [2024-04-24T17:46:41.217Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/task-management-app-eb65b/rulesets/6a9fcd73-a9f5-4c26-9585-7cbb1527d5e8 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-04-24T17:47:27.762Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/task-management-app-eb65b/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-04-24T17:47:27.764Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/task-management-app-eb65b/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-04-24T17:47:29.139Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/task-management-app-eb65b/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-04-24T17:47:29.139Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/task-management-app-eb65b/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-04-24T17:47:30.021Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/task-management-app-eb65b/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-04-24T17:47:30.022Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/task-management-app-eb65b/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/task-management-app-eb65b/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2024-04-24T17:47:30.030Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-24T17:47:30.031Z] > authorizing via signed-in user (davidwmaina89@gmail.com)
+[debug] [2024-04-24T17:47:30.031Z] [iam] checking project task-management-app-eb65b for permissions ["firebase.projects.get"]
+[debug] [2024-04-24T17:47:30.031Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-management-app-eb65b:testIamPermissions [none]
+[debug] [2024-04-24T17:47:30.032Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-management-app-eb65b:testIamPermissions x-goog-quota-user=projects/task-management-app-eb65b
+[debug] [2024-04-24T17:47:30.032Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-management-app-eb65b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-24T17:47:31.950Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-management-app-eb65b:testIamPermissions 200
+[debug] [2024-04-24T17:47:31.951Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/task-management-app-eb65b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-24T17:47:31.953Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-04-24T17:47:31.953Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/task-management-app-eb65b
+[debug] [2024-04-24T17:47:31.960Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-04-24T17:47:31.960Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/task-management-app-eb65b
+[debug] [2024-04-24T17:47:34.132Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/runtimeconfig.googleapis.com 200
+[debug] [2024-04-24T17:47:34.132Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-04-24T17:47:34.355Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/cloudfunctions.googleapis.com 200
+[debug] [2024-04-24T17:47:34.355Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-04-24T17:47:34.356Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-04-24T17:47:34.356Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/task-management-app-eb65b
+[debug] [2024-04-24T17:47:36.961Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-04-24T17:47:36.961Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-04-24T17:47:46.969Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-04-24T17:47:46.970Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/task-management-app-eb65b
+[debug] [2024-04-24T17:47:49.096Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/cloudfunctions.googleapis.com 200
+[debug] [2024-04-24T17:47:49.096Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/task-management-app-eb65b/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
